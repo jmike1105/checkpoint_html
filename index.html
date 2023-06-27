@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html> 
     <head>  
+        <link rel="stylesheet" type="text/css" href="styles.css">
         <title> Checkpoint </title> 
         <meta charset ="UTF-8"> 
     </head>
@@ -14,9 +15,9 @@
                 <li> <a href="contact"> CONTACT </a> </li>
            </ul>    
         </nav>
-        <form>
+        <form >
             <section> 
-                <h2> A PROPOS  </h2>
+            </br></br> <h2> A PROPOS  </h2>
                 <p>
                     <b>Bienvenue chez CodeurSn - Votre partenaire en développement web à Dakar !</br>
                     CodeurSn est une startup dynamique et innovante basée à Dakar, spécialisée dans le développement web et la création de sites web.</br>
@@ -77,50 +78,57 @@
                     vos réalisations et vos aspirations professionnelles. </br> Nous avons hâte de discuter avec vous 
                     des opportunités qui s'offrent à vous chez CodeurSn !"
                 </p>
-            </section>
+            </section> </br>
 
-            <section> 
+            <section class="form-container"> 
                 <h2> CV  </h2>
                     <form>
-                        <label for="nom">Nom :</label>
+                        <div class="form-group">
+                            <label for="nom">Nom :</label>
                             <input type="text" id="nom" name="nom" required><br><br>
-                            
+                        </div>  
+                        <div class="form-group">
                             <label for="prenom">Prénom :</label>
                             <input type="text" id="prenom" name="prenom" required><br><br>
-                            
+                        </div>  
+                        <div class="form-group">
                             <label for="email">Email :</label>
                             <input type="email" id="email" name="email" required><br><br>
-                            
+                        </div> 
+                        <div class="form-group"> 
                             <label for="telephone">Téléphone :</label>
                             <input type="tel" id="telephone" name="telephone" required><br><br>
-                            
+                        </div> 
+                        <div class="form-group">    
                             <label for="adresse">Adresse :</label>
                             <input type="text" id="adresse" name="adresse" required><br><br>
-                            
+                        </div>   
+                        <div class="form-group">  
                             <label for="formation">Formation :</label>
                             <textarea id="formation" name="formation" required></textarea><br><br>
-                            
+                        </div>
+                        <div class="form-group">  
                             <label for="experience">Expérience :</label>
                             <textarea id="experience" name="experience" required></textarea><br><br>
-                            
+                        </div>
+                        <div class="form-group">  
                             <label for="competences">Compétences :</label>
                             <textarea id="competences" name="competences" required></textarea><br><br>
-                            
+                        </div> 
+                        <div class="form-group">   
                             <input type="submit" value="Envoyer">
-
+                        </div>
                     </form>
             </section>
 
-            <section> 
-                <h2> CONTACT </h2>
-                <form> 
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" required></textarea><br><br>
-            </form>
-            </section>
+            
     </form>
         <footer>
-            <p>Ceci est mon pied de page.</p>
+            <div class="footer-content">
+                <p>Contactez-nous : CodeurSn221@gmail.com</p>
+                <p>Téléphone : +221771923696</p>
+                <p>Adresse : Liberté 6 Extension, DAKAR</p>
+              </div>
         </footer>
     </body>
 </html>
